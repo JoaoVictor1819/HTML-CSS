@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+        header{
+            
+            background-color: aliceblue;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 20px;
+        }
+        h1{ 
+            text-align: center;
+            border-radius: 20px;
+            margin: 20px 5px 50px;
+
+        }
+        nav{
+            background-color: rgb(74, 78, 74);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.529);
+        }
+        nav > a{
+            text-decoration: none;
+            color: antiquewhite;
+            font-weight: bold;
+            margin-right: 120px;
+        }
+        nav > a:hover{
+          text-decoration: underline;
+          color: aliceblue;
+          font: bold;
+         
+        } 
+        main{
+            background-color: aliceblue;
+            padding: 12px;
+            margin: 7px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.456);
+        }
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(57, 80, 80);
+        }
+        footer{
+            background-color: sandybrown;
+            color: aliceblue;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+             margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+          <h1>Meu site</h1>
+          <nav>
+            <a href="#">LINKS</a>
+            <a href="#">LINKS</a>
+            <a href="#">LINKS</a>
+            <a href="#">LINKS</a>
+            <a href="#">LINKS</a>
+            <a href="#">LINKS</a>
+          </nav>
+    </header>
+    <main>
+          <section id="assuntos">
+               <p>esportes, politicas e tecnologia</p>
+          </section>
+          <section id="noticias">
+               <article>
+                 <h2>Noticias sobre o brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sit perspiciatis. Iusto similique dolorem a dicta corporis libero beatae. Eius laborum possimus sequi animi quo! Veritatis magnam sapiente natus porro.</p>
+                 <aside>
+                    <p>artigo escrito por fulano da costa</p>
+                 </aside>
+               </article>
+               <article>
+
+               </article>
+          </section>
+    </main>
+    <footer>
+           <p>Desnvolvidor por João Victor</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
