@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/*Gerais*/
 
 *{
     margin: 0px;
@@ -11,7 +10,9 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background-color: lightgrey;
+    background-color: rgb(19, 106, 228);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 h1{
     color: white;
