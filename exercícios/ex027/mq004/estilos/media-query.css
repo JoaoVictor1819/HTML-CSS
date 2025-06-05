@@ -2,6 +2,73 @@
 
 /*todas as demais midas*/
 
-@media print{
-    
+/*Typical device Breakpoit
+-------------------------
+pequenas telas: ate 600px
+celular: ate 600px ate 768px
+tablet: 768px ate 992px
+Desktop:992 ate 1200px
+Grandes Telas: acima de 1200px
+-------------------------
+*/
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+@media print{ /*Impressão*/
+ body{
+    background-image: url(../imagens/back-print.jpg); /*Desnecessário*/
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+ }
+ main{
+    width: 90vw;
+    border: 2px solid black;
+ }
+ main::after{
+    content: 'Essa impressão foi feitar através do site www.eumesmo.com';
+    text-decoration: overline;
+ }
+ #cel{display: none;}
+#table{display: none;}
+#prin{display: block;}
+#pc{display: none;}
+#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/
+   body{
+    background-image: url(../imagens/back-tablet.jpg);
+   }
+   #cel{display: none;}
+#table{display: block;}
+#prin{display: none;}
+#pc{display: none;}
+#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*Descktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #cel{display: none;}
+#table{display: none;}
+#prin{display: none;}
+#pc{display: block;}
+#tv{display: none;}
+
+}
+@media screen and (min-width:1200px){ /*Grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    #cel{display: none;}
+#table{display: none;}
+#prin{display: none;}
+#pc{display: none;}
+#tv{display: block;}
+
 }
